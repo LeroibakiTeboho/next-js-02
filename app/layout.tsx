@@ -36,6 +36,7 @@ export default function RootLayout({
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+            flexFlow: 'column'
 
           }
         }>
