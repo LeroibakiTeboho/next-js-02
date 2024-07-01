@@ -1,5 +1,7 @@
 import React from 'react'
 import { Metadata } from 'next'
+import Link from 'next/link'
+
 
 export const metadata: Metadata = {
   title : {
@@ -10,7 +12,12 @@ export const metadata: Metadata = {
 
 function Blog() {
   return (
-    <h1>Blog</h1>
+    <div>
+
+      <Link href='/'><h2>Home</h2></Link>
+      <h1>Blog</h1>
+    </div>
+    
   ) 
 }
 
