@@ -19,30 +19,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={
-        {
-          minHeight: '100vh',
-          display: 'flex',
-          flexDirection: 'column',
-        }
-      }>
-        <header
-          style={{
-            backgroundColor: "lightblue",
-            padding: "1rem",
-          }}
-        >
-          <p>Header</p>
+      <body className='min-h-screen flex-col '>
+        <header className='bg-[lightblue] p-[1rem] '>
+          <h1>Header</h1>
         </header>
 
         {children}
 
-        <footer
-          style={{
-            backgroundColor: "ghostwhite",
-            padding: "1rem",
-          }}
-        >
+        <footer className='bg-[ghostwhite] p-[1rem]' >
           <p>Footer</p>
         </footer>
       </body>
