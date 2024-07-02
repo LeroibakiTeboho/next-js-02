@@ -1,6 +1,10 @@
 import { notFound } from 'next/navigation'
 import React from 'react'
 
+function getRandomInt(count: number) {
+  return Math.floor(Math.random() * count);
+}
+
 
 function ReviewDetail({params,}: {
     params: {
@@ -8,6 +12,12 @@ function ReviewDetail({params,}: {
         reviewid: string
     }
 }) {
+
+  const random = getRandomInt(2);
+
+  if(random === 1 ) {
+    throw new Error("Error Loading Review...");
+  }
 
   if (parseInt(params.reviewid) > 100) {
     notFound();
