@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import "./globals.css";
 
 
 
@@ -29,40 +30,20 @@ export default function RootLayout({
           style={{
             backgroundColor: "lightblue",
             padding: "1rem",
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-
           }}
         >
-          <h1>Header</h1>
+          <p>Header</p>
         </header>
 
-        <main style={
-          {
-            flex: '1',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            flexFlow: 'column',
-            flexDirection: 'column'
-
-          }
-        }>
-          {children}
-        </main>
+        {children}
 
         <footer
           style={{
             backgroundColor: "ghostwhite",
             padding: "1rem",
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-
           }}
         >
-          <h1>Footer</h1>
+          <p>Footer</p>
         </footer>
       </body>
     </html>
